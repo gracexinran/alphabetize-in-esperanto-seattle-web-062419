@@ -8,7 +8,7 @@ def alphabetize(arr)
       special << letter
     end
   end
-  
+
   arr.each do |element|
     index = ALPHABET.index(element[0])
     index_2 = ALPHABET.index(element.delete(' ')[1])
