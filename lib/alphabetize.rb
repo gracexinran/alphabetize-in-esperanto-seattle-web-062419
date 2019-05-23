@@ -12,7 +12,7 @@ def alphabetize(arr)
   hash.sort_by do |k,v|
     hash[k][0]
   end
-  hash.keys
+  
 
 
 
