@@ -33,15 +33,15 @@ def alphabetize(arr)
               result_s << e
             end
           end
-          if index_s < ALPHABET.index(result_s[1]
+          if index_s < ALPHABET.index(result_s[1])
             sorted[index].unshift(element)
-          elsif index_s > ALPHABET.index(result_s[1]
+          elsif index_s > ALPHABET.index(result_s[1])
             sorted[index].push(element)
           end
         end
       end
     end
   end
-  end
+  
   Hash[hash.sort].values
 end
