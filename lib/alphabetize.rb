@@ -15,7 +15,7 @@ def alphabetize(arr)
     index_6 = ALPHABET.index(element.delete(' ')[5])
     result = []
     result_s = []
-    element.delete(' ').each do |e|
+    element.delete(' ').split.each do |e|
       if special.include?(e)
         result << e
       end
@@ -34,7 +34,7 @@ def alphabetize(arr)
         elsif index_6 > ALPHABET.index(sorted[index].delete(' ')[5])
           sorted[index].push(element)
         else
-          sorted[index].delete(' ').each do |e|
+          sorted[index].delete(' ').split.each do |e|
             if special.include?(e)
               result_s << e
             end
