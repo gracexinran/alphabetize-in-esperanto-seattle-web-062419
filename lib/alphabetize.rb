@@ -1,8 +1,14 @@
 def alphabetize(arr)
   # code here
   sorted = {}
-  english = ['abcdefghijklmnopqrstuvwxyz']
-  special = ALPHABET - english
+  english = 'abcdefghijklmnopqrstuvwxyz'
+  special = []
+  ALPHABET.each do |letter|
+    if !english.include?(letter)
+      special << letter
+    end
+  end
+  
   arr.each do |element|
     index = ALPHABET.index(element[0])
     index_2 = ALPHABET.index(element.delete(' ')[1])
