@@ -7,4 +7,5 @@ def alphabetize(arr)
     sort[index] = element
   end
   sort.sort_by {|k,v| k}
+  sort.values
 end
