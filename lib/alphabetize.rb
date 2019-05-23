@@ -1,11 +1,11 @@
 def alphabetize(arr)
   # code here
-  sort = {}
+  sorted = {}
 
   arr.each do |element|
     index = ALPHABET.index(element[0])
-    sort[index] = element
+    sorted[index] = element
   end
-  sort.sort_by {|k,v| k}
-  sort.values
+  sorted = sorted.sort_by {|k,v| k}
+  sorted.values
 end
