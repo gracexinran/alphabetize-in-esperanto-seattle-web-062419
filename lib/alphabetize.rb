@@ -9,7 +9,7 @@ def alphabetize(arr)
     end
     hash[x] = v
   end
-  hash.sort_by do |k,v|
+  hash.sort do |k,v|
     hash[k][0]
   end
   hash.keys
