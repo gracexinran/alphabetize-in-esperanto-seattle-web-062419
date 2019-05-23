@@ -5,6 +5,7 @@ def alphabetize(arr)
 
     x.split.sort_by do |c|
       a.index(c)
-
+    end
+  end
 
 end
