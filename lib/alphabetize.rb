@@ -12,7 +12,7 @@ def alphabetize(arr)
     element.delete(' ').each do |e|
       if special.include?(e)
         result << e
-      end 
+      end
     end
     index_s = ALPHABET.index(result[1])
     if !sorted[index]
@@ -30,14 +30,14 @@ def alphabetize(arr)
         else
           sorted[index].delete(' ').each do |e|
             if special.include?(e)
-              result_s << e 
+              result_s << e
             end
           end
           if index_s < ALPHABET.index(result_s[1]
             sorted[index].unshift(element)
           elsif index_s > ALPHABET.index(result_s[1]
             sorted[index].push(element)
-          end 
+          end
         end
       end
     end
