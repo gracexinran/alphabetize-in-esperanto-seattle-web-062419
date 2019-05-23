@@ -1,19 +1,10 @@
 def alphabetize(arr)
   # code here
   a = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz".split("")
-  hash = {}
-  arr.each do |x|
-    v = []
-    x.split("").each do |c|
-      v << a.index(c)
-    end
-    hash[x] = v
-  end
-  hash.sort_by do |k,v|
-    hash[k][0]
-  end
-
-
+  arr.sort_by do |x|
+    
+    x.split.sort_by do |c|
+      a.index(c)
 
 
 end
