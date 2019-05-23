@@ -1,7 +1,7 @@
 def alphabetize(arr)
   # code here
   sorted = {}
-  english = 'abcdefghijklmnopqrstuvwxyz'
+  english = 'abcdefghijklmnopqrstuvwxyz'.split
   special = []
   ALPHABET.split.each do |letter|
     if !english.include?(letter)
