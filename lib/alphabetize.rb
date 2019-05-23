@@ -2,7 +2,7 @@ def alphabetize(arr)
   # code here
   a = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
   arr.sort_by do |x|
-    x.collect do |c|
+    x.split.collect do |c|
       a.index(c)
 
     end
