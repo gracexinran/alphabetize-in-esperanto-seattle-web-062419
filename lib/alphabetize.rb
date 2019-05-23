@@ -42,6 +42,6 @@ def alphabetize(arr)
       end
     end
   end
-  
+
   Hash[hash.sort].values
 end
