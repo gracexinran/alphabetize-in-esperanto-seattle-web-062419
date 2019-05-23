@@ -6,6 +6,6 @@ def alphabetize(arr)
     index = ALPHABET.index(element[0])
     sorted[index] = element
   end
-  sorted = sorted.sort_by {|k,v| k}.to_h
+  sorted = sorted.sort_by{|k,v| k}.to_h
   sorted.values
 end
