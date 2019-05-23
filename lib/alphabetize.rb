@@ -42,6 +42,5 @@ def alphabetize(arr)
       end
     end
   end
-  sorted = sorted.sort_by{|k,v| k}.to_h
-  sorted.values
+  Hash[hash.sort].values
 end
