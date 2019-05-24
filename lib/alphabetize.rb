@@ -1,14 +1,14 @@
 def alphabetize(arr)
   # code here
   # a = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz".split("")
-  # 
+  #
   # arr.sort_by do |x|
-  # 
+  #
   #   x.split.sort_by do |c|
   #     a.index(c)
   #   end
   # end
-  esperanto_alphabet = ["a", "b", "c", "ĉ", "d", "e", "f", "g", "ĝ", "h", "ĥ", "i", "j", "ĵ", "k", "l", "m", "n", "o", 
+  esperanto_alphabet = ["a", "b", "c", "ĉ", "d", "e", "f", "g", "ĝ", "h", "ĥ", "i", "j", "ĵ", "k", "l", "m", "n", "o",
     "p", "r", "s", "ŝ", "t", "u", "ŭ", "v", "z"]
     arr.sort_by do |word|
       word.split('').collect do |letter|
